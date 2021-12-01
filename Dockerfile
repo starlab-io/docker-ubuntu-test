@@ -9,6 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
         make \
         openssh-client \
+        rsync \
         r-base-core && \
     apt-get autoremove -y && \
     apt-get clean && \
