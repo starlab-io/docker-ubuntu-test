@@ -11,6 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         ca-certificates \
         make \
         openssh-client \
+        python \
         rsync \
         r-base-core && \
     update-ca-certificates && \
