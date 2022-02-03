@@ -12,7 +12,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         make \
         openssh-client \
         rsync \
-        r-base-core && \
+        r-base-core \
+        python3-venv && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
